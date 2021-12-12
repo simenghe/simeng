@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Router from 'next/router'
+import Link from 'next/link'
 import NavBar from '../components/NavCard.js'
 
 export default function Home() {
@@ -31,16 +32,9 @@ export default function Home() {
 
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
           <NavBar title="Github" description="Find some of my projects" link="https://github.com/simenghe" />
+          <NavBar title="Projects" description="Learn about Next.js in an interactive course with quizzes!" link="/projects" />
 
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
+
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
