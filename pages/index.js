@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Router from 'next/router'
-import Link from 'next/link'
 import NavBar from '../components/NavCard.js'
 
 export default function Home() {
@@ -30,31 +28,27 @@ export default function Home() {
           {' '}senior
         </p>
 
+        <div className="items-center mt-6 flex">
+          <a target="_blank" href="https://github.com/simenghe">
+            <img src="/github.svg" alt="Github" className="h-10 px-2" />
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/simeng-he/">
+            <img src="/linkedin2.svg" alt="Linkedin" className="h-10 px-2" />
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/simeng-he/">
+            <img src="/linkedin2.svg" alt="Linkedin" className="h-10 px-2" />
+          </a>
+        </div>
+
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <NavBar title="Github" description="Find some of my projects" link="https://github.com/simenghe" />
-          <NavBar title="Projects" description="Learn about Next.js in an interactive course with quizzes!" link="/projects" />
+          {/* <NavBar title="Github" description="Find some of my projects" link="https://github.com/simenghe" /> */}
+          <NavBar title="Projects" description="Check out my tech projects!" link="/projects" />
 
 
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
+          <NavBar title={"Hobbies"} link="#hobbies" description={"Juggling and other stuff!"} />
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+
         </div>
       </main>
 
